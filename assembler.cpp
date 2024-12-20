@@ -1,12 +1,5 @@
-/*
- * MIPS Assembler : CS2610 Assembly Language Programming Lab Project
- *
- *  Created on: April 20, 2019
- *     Authors:	NILESH TIWARI CS17B022
- 				VORA BRIJESH HARSHADBHAI CS17B031
- */
 
-#include <bits/stdc++.h>
+#include "bits-stdc++.h"
 #include "mips.h"
 
 using namespace std;
@@ -1116,7 +1109,7 @@ void type8(string opname, string operand, int operand_count, int line_count, int
 			i++;
 		}
 
-		if(!registers.count(r1)>0)
+		if (!(registers.count(r1) > 0))
 		{
 			*valid = 0;
 			cout<<"syntax error at line "<<line_count<<": not valid register"<<endl;
